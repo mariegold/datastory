@@ -1,270 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>(Not) Your Average Twitter User | Discovering groups of similar Twitter users based on their profiles.</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="(Not) Your Average Twitter User" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Discovering groups of similar Twitter users based on their profiles." />
+<meta property="og:description" content="Discovering groups of similar Twitter users based on their profiles." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="(Not) Your Average Twitter User" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="(Not) Your Average Twitter User" />
+<script type="application/ld+json">
+{"headline":"(Not) Your Average Twitter User","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"}},"url":"http://localhost:4000/","description":"Discovering groups of similar Twitter users based on their profiles.","@type":"WebSite","name":"(Not) Your Average Twitter User","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        
+          <img src="/assets/img/logo.png" alt="Logo" />
+        
 
-</head>
+        <h1><a href="http://localhost:4000/">(Not) Your Average Twitter User</a></h1>
+      
+
+        <p>Discovering groups of similar Twitter users based on their profiles.</p>
+
+        <p>
+          <a href="/about">About</a> <br>
+          <a href="/data">Data</a> <br>
+          <a href="/analysis">Analysis</a> <br>
+          <a href="/viz">Visualizations</a>
+        </p> 
 
 
-<body id="page-top">
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Data Story</a>
-        </div>
+        
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Dataset</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">Analysis</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+        
+
+        
+      </header>
+      <section>
+
+      <p>Online social media. You may love them, you may hate them, but the truth is, they have become an integral part of the modern life and they are not going to disappear anytime soon. In fact, it’s likely that the social distancing measures imposed this year due to the pandemic has made them even more popular, as they provide a way to stay connected with friends and the world without having to step outside.</p>
+
+<p>Twitter is arguably the biggest beast of them all. In 2019, Twitter reported 330M monthly active users (that’s roughly equivalent to the population of the US!), and 145M daily active users. <strong><em>Develop</em></strong></p>
+
+<p>Having a random data sample of users from a Twitter study at hand, we decided to usit to try finding whether we can discover groups of users with similar characteristics, where characteristics is defined based on their Twitter activity. More precisely, we looked at the following properties: <strong><em>list of features used for clustering and their description</em></strong></p>
+
+<p>After some research on Twitter’s user base we conjectured that the data could reveal the following user categories:</p>
+
+<h2 id="newbie--inactive">Newbie / Inactive</h2>
+
+<ul>
+  <li>Joined because of peer pressure</li>
+  <li>Has not (yet) posted a single tweet</li>
+  <li>Follows only a few other users</li>
+  <li>Has very few followees</li>
+  <li>No mentions (yet?)</li>
+</ul>
+
+<h2 id="incognito">Incognito</h2>
+
+<ul>
+  <li>Active but rarely tweets or retweets</li>
+  <li>Follows many users</li>
+  <li>Not followed by many</li>
+  <li>Not many mentions</li>
+</ul>
+
+<h2 id="retweeter">Retweeter</h2>
+
+<ul>
+  <li>Similar to incognito</li>
+  <li>Rarely tweets but reweets a lot</li>
+</ul>
+
+<h2 id="community-builder">Community builder</h2>
+
+<ul>
+  <li>Fairly balanced number of followers and number of following users</li>
+  <li>Retweets and mentions posts from their community</li>
+  <li>Number of tweets may vary</li>
+</ul>
+
+<h2 id="celebrity-influencer--media-businesses">Celebrity, Influencer &amp; Media, Businesses</h2>
+
+<ul>
+  <li>Tweets a lot</li>
+  <li>Mentioned a lot</li>
+  <li>Retweeted a lot</li>
+  <li>Has much more followers than the number of users they follow</li>
+  <li>Uses hashtags, URLs</li>
+</ul>
+
+<h2 id="bot--spammer">Bot &amp; Spammer</h2>
+
+<ul>
+  <li>Post many tweets (often duplicates &amp; containing URLs)</li>
+  <li>Might follow many users but are not followed much themselves</li>
+  <li>No mentions or reweets</li>
+</ul>
+
+<p>There are of course many profiles that don’t fit any of the above descriptions, however we estimate that these categories should account for at least 80% of Twitter’s user base.</p>
+
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-    <!-- /.container-fluid -->
-</nav>
-
-  <header>
-    <div class="header-content">
-        <div class="header-content-inner">
-            <h1>Twitter User Behaviour</h1>
-            <hr>
-            <p>Bla</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-        </div>
-    </div>
-</header>
-  <section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">At Your Service</h2>
-                <hr class="primary">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                    <h3>Sturdy Templates</h3>
-                    <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <h3>Ready to Ship</h3>
-                    <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Up to Date</h3>
-                    <p class="text-muted">We update dependencies to keep things fresh.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                    <h3>Made with Love</h3>
-                    <p class="text-muted">You have to make your websites with love these days!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
-                <hr class="primary">
-                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-            </div>
-        <div class="col-lg-2 col-lg-offset-2 text-center">
-            <a href="https://twitter.com/">
-                <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p></p>
-            </a>
-        </div>
-        <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="mailto:">
-            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p></p>
-            </a>
-        </div>
-        <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="https://github.com/">
-            <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p></p>
-            </a>
-        </div>
-
-    </div>
-</section>
-
-  <!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/wow.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="js/creative.js"></script>
-
-</body>
-
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
 </html>

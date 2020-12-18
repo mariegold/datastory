@@ -18,11 +18,11 @@ To find the user types, we applied unsupervised learning methods, concretely $K$
 
 First, all of the above features were scaled so that they fall into the range $[0,1]$. For DBSCAN, we tried to find suitable parameters (neighbourhood size and $\epsilon$) by grid search. Despite that, the algorithm often outputted a very low number of clusters and classified a large fraction of users as noise. As the result was not showing satisfactory results, we considered $K$-means as an alternative. For $K$-means we plotted plotted the distortions ( sum of square errors) for a range of $K$:
 
-<img src="/Users/MB/Desktop/ADA/myADA2020/Project/P3/datastory/elbow.png" alt="elbow" style="zoom:90%;" />
+<img src="/assets/img/elbow.png" alt="elbow" style="zoom:90%;" />
 
 From this plot, a good number of clusters seems to be 3, however our estimated $K=6$ is also not a bad choice, so we stick with it. This clustering method resulted in uneven clusters (some are much bigger than others), but each group is well represented.
 
-<img src="/Users/MB/Desktop/ADA/myADA2020/Project/P3/datastory/users_per_cluster_pie.png" alt="users_per_cluster_pie" style="zoom:90%;" />
+<img src="/assets/img/users_per_cluster_pie.png" alt="users_per_cluster_pie" style="zoom:90%;" />
 
 On the plot we can see the most meaningful characteristics (the one, which are differ between clusters) of average user in each cluster. The numer of users in clusters are not the same, but differ less than in ten times, so the groups of the users valuable. 
 1. $31\%$ of analyzed users. Having the smallest values of different features, including the account lifetime. That means that the account was created for some purposes and has not being used as a normal account. For example, a person created it for spying on their spouses, of it may be a bot, which collects some statistics and information on other users. 

@@ -12,13 +12,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Discovering groups of similar Twitter users based on their profiles." />
 <meta property="og:description" content="Discovering groups of similar Twitter users based on their profiles." />
-<link rel="canonical" href="http://localhost:4000/data.html" />
-<meta property="og:url" content="http://localhost:4000/data.html" />
+<link rel="canonical" href="http://localhost:4000/about.html" />
+<meta property="og:url" content="http://localhost:4000/about.html" />
 <meta property="og:site_name" content="(Not) Your Average Twitter User" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="(Not) Your Average Twitter User" />
 <script type="application/ld+json">
-{"headline":"(Not) Your Average Twitter User","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"}},"url":"http://localhost:4000/data.html","description":"Discovering groups of similar Twitter users based on their profiles.","@type":"WebPage","@context":"https://schema.org"}</script>
+{"headline":"(Not) Your Average Twitter User","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"}},"description":"Discovering groups of similar Twitter users based on their profiles.","url":"http://localhost:4000/about.html","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/style.css?v=">
@@ -40,7 +40,7 @@
 
         <p>
           <a href="/about">About</a> <br>
-          <a href="/data">Data</a> <br>
+          <a href="/">Intro</a> <br>
           <a href="/analysis">Analysis</a> <br>
           <a href="/viz">Visualizations</a>
         </p> 
@@ -54,7 +54,13 @@
       </header>
       <section>
 
-      
+      <p>This data story was created by Marie Biolková, Michael Chan and Polina Poskura as part of the Applied Data Analysis course at EPFL (2020). It is an extension to a replication study of Liang &amp; Fu’s <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134270">Testing Propositions Derived from Twitter Studies</a>.</p>
+
+<h3 id="contact">Contact</h3>
+<p>{marie.biolkova, chunheimichael.chan, polina.proskura}@epfl.ch</p>
+
+<h3 id="data">Data</h3>
+<p>We used the <code class="language-plaintext highlighter-rouge">EgoAlterProfiles</code> and <code class="language-plaintext highlighter-rouge">EgoTimelines</code> datasets from the study. It can be downloaded <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/L1MJZ6">here</a></p>
 
 
       </section>
@@ -63,6 +69,16 @@
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          inlineMath: [['$','$']]
+        }
+      });
+    </script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    </script> 
     <script src="/assets/js/scale.fix.js"></script>
     
   </body>

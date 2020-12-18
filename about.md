@@ -8,4 +8,4 @@ This data story was created by Marie Biolková, Michael Chan and Polina Poskura 
 {marie.biolkova, chunheimichael.chan, polina.proskura}@epfl.ch
 
 ### Data
-We used the `EgoAlterProfiles` and `EgoTimelines` datasets from the study. It can be downloaded [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/L1MJZ6)
+We used the `EgoAlterProfiles` and `EgoTimelines` datasets from the study. It can be downloaded [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/L1MJZ6).

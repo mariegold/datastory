@@ -4,3 +4,4 @@ description: Discovering groups of similar Twitter users based on their profiles
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+absolute_url: https://mariegold.github.io/datastory/

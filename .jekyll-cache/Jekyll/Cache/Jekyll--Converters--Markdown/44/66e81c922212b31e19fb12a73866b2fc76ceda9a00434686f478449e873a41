@@ -1,8 +1,0 @@
-I"<p>This data story was created by Marie Biolková, Michael Chan and Polina Poskura as part of the Applied Data Analysis course at EPFL (2020). It is an extension to a replication study of Liang &amp; Fu’s <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134270">Testing Propositions Derived from Twitter Studies</a>.</p>
-
-<h3 id="contact">Contact</h3>
-<p>{marie.biolkova, chunheimichael.chan, polina.proskura}@epfl.ch</p>
-
-<h3 id="data">Data</h3>
-<p>We used the <code class="language-plaintext highlighter-rouge">EgoAlterProfiles</code> and <code class="language-plaintext highlighter-rouge">EgoTimelines</code> datasets from the study. It can be downloaded <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/L1MJZ6">here</a></p>
-:ET

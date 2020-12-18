@@ -9,10 +9,25 @@ To find the user types, we applied unsupervised learning methods, concretely $K$
 - proportion of tweets
 - proportion of RT
 - proportion of replies
-- days since account creation
+- days since account creation 
 - average number of statuses per month
 - average number of hashtags per post
 - average number of URLs per post
 - average number of mentions per post
 - average number of retweets per tweet
 
+First, all of the above features were scaled so that they fall into the range $[0,1]$. For DBSCAN, we tried to find suitable parameters (neighbourhood size and $\epsilon$) by grid search. Despite that, the algorithm often outputted a very low number of clusters and classified a large fraction of users as noise. As the result was not showing satisfactory results, we considered $K$-means as an alternative. For $K$-means we plotted plotted the distortions ( sum of square errors) for a range of $K$:
+
+<img src="/Users/MB/Desktop/ADA/myADA2020/Project/P3/datastory/elbow.png" alt="elbow" style="zoom:90%;" />
+
+From this plot, a good number of clusters seems to be 3, however our estimated $K=6$ is also not a bad choice, so we stick with it. This clustering method resulted in uneven clusters (some are much bigger than others), but each group is well represented.
+
+<img src="/Users/MB/Desktop/ADA/myADA2020/Project/P3/datastory/users_per_cluster_pie.png" alt="users_per_cluster_pie" style="zoom:90%;" />
+
+On the plot we can see the most meaningful characteristics (the one, which are differ between clusters) of average user in each cluster. The numer of users in clusters are not the same, but differ less than in ten times, so the groups of the users valuable. 
+1. $31\%$ of analyzed users. Having the smallest values of different features, including the account lifetime. That means that the account was created for some purposes and has not being used as a normal account. For example, a person created it for spying on their spouses, of it may be a bot, which collects some statistics and information on other users. 
+2. $24\%$ of analyzed users. This type of user has the biggest characteristics on urls in tweets and on tweets, but relatively small replies, retweets and mentions, which means -- small interaction with other people. This category might be some company/program, and the amount of tweets with urls is for advertising movie, product or company.
+3. $8\%$ of analyzed users. This type of user has many mentions and replies and relatively less on other features, which means he or she is mainly communicate through the twiiter, contact different persons and discuss with them tweets and answers.
+4. $13\%$ of analyzed users. This type does not prevail on each kind of possible twitter activities, but is in the middle of any of them. Which means it is regular active user. Uses all the functions of the applications, but not follow some purpose as popularity or advertising.
+5. $6\%$ of analyzed users. The fifth type has small amount of generating contents and replies, so this users does not communicate with the others that much, but has the biggest rates on mentions and retweets. This might be a celebrity who retweets a lot about her/his new movie/music album or political activist, that retweets most important news in the sphere. 
+6. $18\%$ of analyzed users. The sixth cluster has almost none tweets, mentions or any activity. But, the account age are one of the biggests. So, this is the reader. The person, who reads a lot, but does not communicate with anyone through the twitter or generate new content. May be the person who cares a lot about sharing personal information, so Incognito.

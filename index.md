@@ -58,4 +58,4 @@ After some research on Twitter's user base we conjectured that the data could re
 
 There are of course many profiles that don't fit any of the above descriptions, however we estimate that these categories should account for at least 80% of Twitter's user base. 
 
-Continue to [Analysis](/analysis).
+Continue to [Analysis](/datastory/analysis).

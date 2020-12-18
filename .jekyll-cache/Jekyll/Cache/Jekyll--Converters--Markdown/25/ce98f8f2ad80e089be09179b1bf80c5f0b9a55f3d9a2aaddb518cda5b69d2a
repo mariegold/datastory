@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>(Not) Your Average Twitter User | Discovering groups of similar Twitter users based on their profiles.</title>
-<meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="(Not) Your Average Twitter User" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Discovering groups of similar Twitter users based on their profiles." />
-<meta property="og:description" content="Discovering groups of similar Twitter users based on their profiles." />
-<link rel="canonical" href="http://localhost:4000/analysis.html" />
-<meta property="og:url" content="http://localhost:4000/analysis.html" />
-<meta property="og:site_name" content="(Not) Your Average Twitter User" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="(Not) Your Average Twitter User" />
-<script type="application/ld+json">
-{"headline":"(Not) Your Average Twitter User","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"}},"description":"Discovering groups of similar Twitter users based on their profiles.","url":"http://localhost:4000/analysis.html","@type":"WebPage","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        
-          <img src="/assets/img/logo.png" alt="Logo" />
-        
-
-        <h1><a href="http://localhost:4000/">(Not) Your Average Twitter User</a></h1>
-      
-
-        <p>Discovering groups of similar Twitter users based on their profiles.</p>
-
-        <p>
-          <a href="/datastory/about">About</a> <br>
-          <a href="/datastory/">Intro</a> <br>
-          <a href="/datastory/analysis">Analysis</a> <br>
-          <a href="/datastory/conclusion">Conclusion</a>
-        </p> 
-
-      </header>
-      <section>
-
-      <p>To find the user types, we applied unsupervised learning methods, concretely $K$-means and DBSCAN clustering. We assessed similarity based on the following properties:</p>
+I"¿^5<p>To find the user types, we applied unsupervised learning methods, concretely $K$-means and DBSCAN clustering. We assessed similarity based on the following properties:</p>
 <ul>
   <li>followers count</li>
   <li>friends count (i.e. how many accounts the user follows)</li>
@@ -164,33 +114,18 @@ var n,i=t("./lib/build-log"),a=t("./lib/epsilon"),o=t("./lib/intersecter"),s=t("
 
 <p>Once we had our clusters, we wanted to explore how users from each group use Twitter from the day they join. To do this, we decided to plot the some metrics (number of tweets, URLs, as well as retweets to track their popularity) that can help us understand userâ€™s Twitter activity over time. These were averaged accross the closest 10 points to the centroids of clusters, to make:</p>
 
-<p><img src="/datastory/assets/img/times.png" alt="times" style="zoom:75%;" /></p>
-
 <ul>
   <li>Cluster 0: The average users seem to be active only first few months and then lose interest.</li>
   <li>Cluster 1: Active users for a certain period, then sudden drop in activity. <em>Maybe they started a family?</em></li>
   <li>Cluster 2: Comparatively low activity and higher usage of URLs towards the end of the studied period. <em>A regular user turns into a spammer?</em></li>
   <li>Cluster 3: Negative trend in tweeting activity, constant popularity.</li>
   <li>Cluster 4: Rare visitors, probably tweets on holidays.</li>
-  <li>Cluster 5: Regular active users.</li>
 </ul>
 
+<ol>
+  <li>Regular active users.</li>
+</ol>
 
+<p><img src="/datastory/assets/img/times.png" alt="times" style="zoom:75%;" /></p>
 
-      </section>
-
-    </div>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-          inlineMath: [['$','$']]
-        }
-      });
-    </script>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
-    </script> 
-    <script src="/assets/js/scale.fix.js"></script>
-    
-  </body>
-</html>
+:ET

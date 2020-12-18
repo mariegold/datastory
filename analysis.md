@@ -51,5 +51,14 @@ You can display various feature pairs to compare cluster centres here (<span sty
 
 {% include centers2.html %}
 
+Once we had our clusters, we wanted to explore how users from each group use Twitter from the day they join. To do this, we decided to plot the some metrics (number of tweets, URLs, as well as retweets to track their popularity) that can help us understand user's Twitter activity over time. These were averaged accross the closest 10 points to the centroids of clusters, to make:
+
 <img src="/datastory/assets/img/times.png" alt="times" style="zoom:75%;" />
+
+- Cluster 0: The average users seem to be active only first few months and then lose interest.
+- Cluster 1: Active users for a certain period, then sudden drop in activity. *Maybe they started a family?*
+- Cluster 2: Comparatively low activity and higher usage of URLs towards the end of the studied period. *A regular user turns into a spammer?*
+- Cluster 3: Negative trend in tweeting activity, constant popularity.
+- Cluster 4: Rare visitors, probably tweets on holidays.
+- Cluster 5: Regular active users.
 

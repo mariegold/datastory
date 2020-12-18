@@ -1,0 +1,2 @@
+I"„<p>In this project, we made an attempt at discovering similar groups of Twitter users based on their usage of the platform. According to our hypotheses, it should be possible to detect 6 groups of users:  We  augmented the existing statistics we had available on each ego by other quantities that we though would improve clustering. While DBSCAN did not produce satisfactory results,</p>
+:ET

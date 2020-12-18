@@ -8,7 +8,7 @@ Online social media. You may love them, you may hate them, but the truth is, the
 
 Social media platforms allow people to consume and share information in real-time, thereby serving a wide range of purposes – from sharing personal thoughts and experience to connecting customers with businesses. Twitter is arguably the biggest beast of them all. In 2019, Twitter reported 330M monthly active users (that's roughly equivalent to the population of the US!), and 145M daily active users. Twitter profiles can be run by a variety of user types. Besides typical (human) users, we may encounter professional accounts, bussiness accounts or, unfortunately, spammers. 
 
-Having a random data sample of users from a Twitter study at hand, we decided to usit to try finding whether we can discover groups of users with similar characteristics, where characteristics is defined based on their Twitter activity. 
+Having a random data sample of users from a Twitter study at hand, we decided to use it to try finding whether we can discover groups of users with similar characteristics, where characteristics is defined based on their Twitter activity. 
 
 Why is that useful? There are many reasons why – to name a few:
 - Understanding user profiles and their similarities can be used for recommending new friends or who to follow.

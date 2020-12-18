@@ -18,23 +18,23 @@ To find the user types, we applied unsupervised learning methods, concretely $K$
 
 First, all of the above features were scaled so that they fall into the range $[0,1]$. For DBSCAN, we tried to find suitable parameters (neighbourhood size and $\epsilon$) by grid search. Despite that, the algorithm often outputted a very low number of clusters and classified a large fraction of users as noise. As the result was not showing satisfactory results, we considered $K$-means as an alternative. For $K$-means we plotted plotted the distortions ( sum of square errors) for a range of $K$:
 
-<center><img src="/assets/img/elbow.png" alt="elbow" style="zoom:90%;" /></center>
+<center><img src="/datastory/assets/img/elbow.png" alt="elbow" style="zoom:90%;" /></center>
 
 From this plot, a good number of clusters seems to be 3, however our estimated $K=6$ is also not a bad choice, so we stick with it. This clustering method resulted in uneven clusters (some are much bigger than others), but each group is well represented.
 
-<center> <img src="/assets/img/users_per_cluster_pie.png" alt="users_per_cluster_pie" style="zoom:90%;"/> </center>
+<center> <img src="/datastory/assets/img/users_per_cluster_pie.png" alt="users_per_cluster_pie" style="zoom:90%;"/> </center>
 
 To visualize the obtained clusters, we tried linear and nonlinear methods using PCA and t-SNE, however the plots were not very useful – one could not identify the clusters within the plots. The densities of the features were a bit more informative as from these one may be able to infer which features played an important role during clustering. In particular, features where there is a lot of overlap in their distribution between clusters might not be useful for differentiating between users.
 
-<img src="/assets/img/distrib.png" alt="distrib" style="zoom:120%;" />
+<img src="/datastory/assets/img/distrib.png" alt="distrib" style="zoom:120%;" />
 
 Surprisingly, some of the features that were considered as the most important ones have similar distributions for all clusters, such as number of followers or statuses per month. We will now look more closely at the remaining features, first pairwise:
 
-<img src="/assets/img/Clustering.png" alt="Clustering" style="zoom:75%;" />
+<img src="/datastory/assets/img/Clustering.png" alt="Clustering" style="zoom:75%;" />
 
 And individually:
 
-<img src="/assets/img/Clustes_barplot.png" alt="Clustes_barplot" style="zoom:75%;" />
+<img src="/datastory/assets/img/Clustes_barplot.png" alt="Clustes_barplot" style="zoom:75%;" />
 
 From here, we start seeing what characteristics might be linked to each cluster. We try to summarize and interpret them as follows:
 
